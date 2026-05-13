@@ -1,0 +1,42 @@
+### User Register
+Post http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName":"anu",
+    "lastName":"uni",
+    "email":"suraabhi@gmail.com",
+    "password": "User@1234",
+    "profileImageUrl":"https://example.com/avatars/User.png"
+}
+
+### Author Register
+Post http://localhost:4000/author-api/register
+Content-Type: application/json
+
+{
+    "firstName":"Anurag",
+    "lastName":"uni",
+    "email":"shi@gmail.com",
+    "password": "User@1234",
+    "profileImageUrl":"https://example.com/avatars/User.png"
+}
+
+### Article Creation
+POST http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "author":"6989989af2e80a33a0bff117",
+    "title":"helllo",
+    "category":"test2 article",
+    "content":"helloo"
+}
+
+### Article Reading
+GET  http://localhost:4000/author-api/articles/6989989af2e80a33a0bff117
+
+### Test res
+GET http://localhost:4000/test
+### Admin Routes
+
