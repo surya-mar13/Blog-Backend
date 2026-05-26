@@ -16,13 +16,14 @@ const app=exp()
 app.use(exp.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: [
-        'https://blog-application-beryl.vercel.app',
-        'http://localhost:5173',
-        'http://localhost:5174'
-    ],
-    credentials: true
+    origin: 'https://blog-application-beryl.vercel.app',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }))
+
+app.options('*', cors())
+
 //connect APIs
 app.use("/common-api",commonRouter)
 app.use('/user-api',userRoute)
