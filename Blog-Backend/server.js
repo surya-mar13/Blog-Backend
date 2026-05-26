@@ -17,7 +17,7 @@ app.use(exp.json())
 app.use(cookieParser())
 app.use(cors({
     origin: [
-        'https://blog-application-8e1edai34-surya-mar13s-projects.vercel.app',
+        'https://blog-application-beryl.vercel.app',
         'http://localhost:5173',
         'http://localhost:5174'
     ],
