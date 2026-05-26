@@ -16,7 +16,11 @@ const app=exp()
 app.use(exp.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
+    origin: [
+        'https://blog-application-8e1edai34-surya-mar13s-projects.vercel.app',
+        'http://localhost:5173',
+        'http://localhost:5174'
+    ],
     credentials: true
 }))
 //connect APIs
