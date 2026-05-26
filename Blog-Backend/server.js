@@ -22,8 +22,6 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization']
 }))
 
-app.options('*', cors())
-
 //connect APIs
 app.use("/common-api",commonRouter)
 app.use('/user-api',userRoute)
